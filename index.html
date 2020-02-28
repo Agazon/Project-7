@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hillel home work</title>
+</head>
+<body>
+    <script>
+          var str = "str";
+             var mapFunction = function(string,length,symbol,flag){
+                 var padString = "";
+                 for (var i = 0; i < length - string.length; i++) {
+                     padString += symbol;
+                     
+                 }
+                 if(flag === "l") {
+                     return padString + string;
+                 }
+                 else if(flag === "r") {
+                     return string + padString;
+                 }
+                 else
+                     alert("error");
+             };
+             
+             console.log(mapFunction(str,10,"a","l"));
+    
+    </script>
+</body>
+</html>
